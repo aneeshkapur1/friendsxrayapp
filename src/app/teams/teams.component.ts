@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-teams',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamsComponent implements OnInit {
 
-  constructor() { }
+  constructor( private route: Router) { }
 
   ngOnInit(): void {
+  }
+
+  
+  navigateToTeams(): void {
+    this.route.navigate(["/team"]);
+  }
+
+  navigateToHome(): void {
+    this.route.navigate(["/home"])
   }
 
 }
