@@ -1,0 +1,24 @@
+
+<h2 style="text-align: center; color: #574ee4; font-weight: 500;">COVID - 19 India Stats</h2>
+<div class="text-center">
+<table class="table table-bordered ">
+    <thead>
+    
+      <tr>
+       <th scope="col" style="color: Red; font-weight: bold;">Confirmed</th>
+        <th scope="col"  style="color: Blue;  font-weight: bold;" *ngIf= "activeCases">Active</th>
+        <th scope="col"  style="color:green;  font-weight: bold;">Recovered</th>
+        <th scope="col"  style="color: grey;  font-weight: bold;">Deaths</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"> {{confirmedCases}}</th>
+        <td  *ngIf= "activeCases">{{activeCases}}</td>
+        <td>{{recoveredCases}}</td>
+        <td>{{deaths}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <hr width="100%" style="border: 1px solid black;">

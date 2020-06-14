@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/scss/font-awesome.scss",
+              "src/assets/app.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "friendsxrayapp"
+    }
+  },
+  "defaultProject": "friendsxrayapp",
+  "cli": {
+    "analytics": "a884c073-9086-46a4-a7ad-91ea3e9a68b0"
+  }
 }
