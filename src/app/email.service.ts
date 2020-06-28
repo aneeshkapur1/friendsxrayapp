@@ -12,7 +12,7 @@ export class EmailService {
 
   }
 
-  private baseUrl  = "http://emailApp.ap-south-1.elasticbeanstalk.com/email/";
+  private baseUrl  = "https://13.235.132.14:9090/email/";
 
   sendEmail(email : Email): Observable<any>{
     return this.http.post(`${this.baseUrl}`, email);
